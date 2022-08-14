@@ -15,7 +15,9 @@ h3{
 p{
     color: #8f8f8f;
 }
-
+.left-div{
+    padding: 0 0 20% 0;
+}
 
 #features{
     padding: 7% 15%;
@@ -29,7 +31,11 @@ p{
    
     text-align: center;
 }
-
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 35px;
+    }
+  }
 /* Navigation */
 
 nav{
