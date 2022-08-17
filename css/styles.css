@@ -34,12 +34,28 @@ p{
 
 @media only screen and (max-width: 600px) {
     h1{
-        font-size: 35px;
+        font-size: 1.8rem;
     }
-    .carousel-item{
-       
-        
-    }
+iframe{
+    height: 25vh;
+}
+.download-button{
+     color: black;
+     background-color: white;
+     width: 40vw;
+     height: 7vh;
+     font-size: 14px;
+ }
+
+.upper-button-red{
+ background-color: white;
+ color: black;
+}
+.upper-button-red:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: 0;
+   }
   }
 
 
@@ -82,9 +98,7 @@ nav{
 
 /* Buttons  */
 
-.download-button{
-   margin: 5% 3% 5% 0;
-}
+
 
 /* Title Image */
 
@@ -133,3 +147,4 @@ nav{
     align-items: center;
     padding: 5% 15%;
 }
+
