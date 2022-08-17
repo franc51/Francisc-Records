@@ -32,7 +32,7 @@ p{
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     h1{
         font-size: 1.8rem;
     }
@@ -40,6 +40,7 @@ iframe{
     height: 25vh;
 }
 .download-button{
+    margin: 1% 3% 3% 1%;
      color: black;
      background-color: white;
      width: 40vw;
@@ -98,7 +99,14 @@ nav{
 
 /* Buttons  */
 
-
+.download-button{
+    margin: 1% 3% 3% 1%;
+     color: black;
+     background-color: white;
+     width: 25vw;
+     height: 6vh;
+     font-size: 14px;
+ }
 
 /* Title Image */
 
@@ -132,7 +140,7 @@ nav{
 
 #carrousel {
     
-    background-image: radial-gradient( circle farthest-corner at 80% 50%,  rgba(152, 43, 255, 0.6) 1%, rgba(73, 158, 255, 0.1) 99.9% );;
+    background-image: radial-gradient( circle farthest-corner at 80% 50%,  rgba(152, 43, 255, 0.6) 1%, rgba(73, 158, 255, 0.1) 99.9% );
 }
 
 .carousel-btn{
@@ -148,3 +156,17 @@ nav{
     padding: 5% 15%;
 }
 
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a880ff;
+    font-size: 17px;
+}
+
+
+.futer{
+    color: black;
+}
