@@ -153,7 +153,27 @@ data-aos-delay="500">
 
   </section>
 
+<section>
 
+<div class="numaratoare">
+  <div class="counter-container">
+    <i class="icon fa-brands fa-youtube fa-5x"></i>
+    <div class="counter" data-target="38554"></div>
+    <span>Views</span>
+  </div>
+  <div class="counter-container">
+    <i class="icon fa-solid fa-person fa-5x"></i>
+    <div class="counter" data-target="180"></div>
+    <span>Subscribers</span>
+  </div>
+  <div class="counter-container">
+    <i class=" icon fa-solid fa-video fa-5x"></i>
+    <div class="counter" data-target="42"></div>
+    <span>Videos</span>
+  </div>
+</div>
+  
+</section>
   
   <!-- Footer -->
 
@@ -165,8 +185,31 @@ data-aos-delay="500">
   </footer>
 
   <script>
-    AOS.init();
+const counters = document.querySelectorAll('.counter')
+
+counters.forEach(counter => {
+  counter.innerText = '0'
+  
+  const updateCounter = () => {
+    const target = +counter.getAttribute('data-target')
+    const c = +counter.innerText
+
+    const increment = target / 1000
+
+    if(c < target){
+      counter.innerText = Math.ceil(c + increment)
+      setTimeout(updateCounter, 1)
+    } else {
+      counter.innerText = target
+    }
+  }
+
+  updateCounter()
+
+})
+
   </script>
+  <script>AOS.init();</script>
 </body>
 
 </html>

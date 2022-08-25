@@ -32,7 +32,8 @@ p{
     text-align: center;
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 600px) {
+   
     h1{
         font-size: 1.8rem;
     }
@@ -169,4 +170,27 @@ footer{
 
 .futer{
     color: black;
+}
+
+
+.numaratoare {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.counter-container {
+    margin: 20px 120px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.counter {
+    font-size: 60px;
+    margin-top: 10px;
+    font-family: Haettenschweiler;
+   
 }
